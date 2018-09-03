@@ -1,0 +1,8 @@
+[ip]
+public_ip_url = http://ipecho.net/plain
+public_ip_cache_path = /path/to/ip.txt
+
+[dynhost]
+zone_name = domain.com
+record_id = 123456
+sub_domain = subdomain
