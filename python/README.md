@@ -1,9 +1,4 @@
-# DynHOST setup
-
-## About OVH DynHOST
-
-DynHOST allows you to point your domain or sub-domain to an IP of connection
-and, if it changes, to update it in real time.
+# DynHOST setup - Python
 
 ## Install Python 3 and pip
 

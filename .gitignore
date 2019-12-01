@@ -1,15 +1,7 @@
 #
 # .gitignore
 #
-# Source: https://github.com/github/gitignore
-#
-
-# Composer
-composer.phar
-/vendor/
-
-# Dotenv environment file
-.env
 
 # IDE
 /.idea
+*.iml
