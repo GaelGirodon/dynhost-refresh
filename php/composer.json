@@ -1,16 +1,16 @@
 {
     "name": "gaelgirodon/dynhost",
-    "description": "DynHost Raspberry Pi",
-    "type": "project",
+    "description": "DynHost refresh script",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
-            "name": "Gaël Girodon",
-            "email": "git@gaelgirodon.fr"
+            "name": "Gael Girodon",
+            "email": "contact@gaelgirodon.fr"
         }
     ],
     "require": {
-        "ovh/ovh": "^2.0",
-        "vlucas/phpdotenv": "^2.4",
-        "guzzlehttp/guzzle": "~6.0"
+        "ovh/ovh": "^3.0",
+        "vlucas/phpdotenv": "^5.4",
+        "guzzlehttp/guzzle": "^7.4"
     }
 }

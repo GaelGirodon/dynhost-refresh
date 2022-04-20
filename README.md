@@ -17,7 +17,7 @@ and, if it changes, to update it in real time.
   a DynHost entry
 - [**Python**](python/) - Python 3 scripts to request credentials and update
   a DynHost entry using the Python library for OVH API
-- [**PHP**](php/) - PHP 7 scripts to update a DynHost entry using Composer,
+- [**PHP**](php/) - PHP scripts to update a DynHost entry using Composer,
   Guzzle, PHP dotenv and PHP library for OVH API
 
 ## License

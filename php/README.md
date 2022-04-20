@@ -9,7 +9,7 @@ if it has changed, the DynHost entry is updated.
 
 ### Requirements
 
-- PHP >= 7.0
+- PHP >= 8.0
 - Composer
 
 ### DynHost refresh setup
