@@ -9,8 +9,8 @@
         }
     ],
     "require": {
-        "ovh/ovh": "^3.0",
-        "vlucas/phpdotenv": "^5.4",
-        "guzzlehttp/guzzle": "^7.4"
+        "ovh/ovh": "^3.2",
+        "vlucas/phpdotenv": "^5.5",
+        "guzzlehttp/guzzle": "^7.5"
     }
 }
