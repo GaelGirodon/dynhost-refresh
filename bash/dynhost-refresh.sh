@@ -3,9 +3,7 @@
 #
 # dynhost-refresh.sh
 #
-# Refresh the DynHost entry associated to the domain name.
-# Check the current public IP address and if it has changed,
-# the DynHost entry is updated.
+# Update the DynHost record if the public IP address has changed.
 #
 
 # IP
@@ -26,12 +24,12 @@ echo "======= DynHost refresh $(date '+%Y-%m-%d %H:%M:%S') ======="
 # Load cached IP
 ip_cache=""
 if [ -f "${IP_CACHE_FILE}" ]; then
-    ip_cache=`cat "${IP_CACHE_FILE}"`
+    ip_cache=$(cat "${IP_CACHE_FILE}")
 fi
 echo "Cached public IP: '${ip_cache}'"
 
 # Get current public IP
-ip=`curl -s "${IP_WEBSITE}"`
+ip=$(curl -s "${IP_WEBSITE}")
 status=$?
 if [ $status -ne 0 ]; then
     echo "Failed to get public IP from '${IP_WEBSITE}'"
@@ -40,7 +38,7 @@ fi
 echo "Current public IP: '${ip}'"
 
 #
-# Refresh DynHost entry
+# Refresh DynHost record
 #
 
 # Compare current public IP with cache
@@ -57,13 +55,13 @@ user="${DYNHOST_USER}"
 password="${DYNHOST_PASSWORD}"
 url="https://www.ovh.com/nic/update?system=${system}&hostname=${hostname}&myip=${ip}"
 
-response=`curl -s -u "${user}:${password}" "${url}"`
+response=$(curl -s -u "${user}:${password}" "${url}")
 status=$?
 if [ $status -ne 0 ]; then
-    echo "Failed to update the DynHost entry"
+    echo "Failed to update the DynHost record"
     exit 2
 fi
-echo "DynHost entry successfully updated (${response})"
+echo "DynHost record successfully updated (${response})"
 
 # Update IP cache
 echo "${ip}" > "${IP_CACHE_FILE}"

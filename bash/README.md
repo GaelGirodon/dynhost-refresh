@@ -1,10 +1,7 @@
 # DynHost refresh script - Bash
 
-A simple Bash script without dependencies to update a DynHost entry.
-
-Refresh the DynHost entry associated to the domain name.
-Check the current public IP address and if it has changed,
-the DynHost entry is updated.
+A simple Bash script without dependencies to update a DynHost record
+with the current public IP address if required.
 
 ## Setup
 

@@ -1,6 +1,0 @@
-#
-# .gitattributes
-#
-
-# Declare files that will always have LF line endings on checkout.
-* text eol=lf

@@ -36,7 +36,7 @@ except:
 
 ###############################################################################
 
-# If IPs are the same, no need to update DynHOST
+# If IPs are the same, no need to update DynHost
 if current_ip == old_ip:
     print("Public IP is already up-to-date")
     exit()
@@ -54,7 +54,7 @@ except:
 
 ###############################################################################
 
-# Instanciate an OVH Client
+# Initialize an OVH Client
 client = ovh.Client()
 
 zone_name = config['dynhost']['zone_name']
@@ -64,7 +64,7 @@ sub_domain = config['dynhost']['sub_domain']
 # Update the DynHost record
 try:
     result = client.put('/domain/zone/' + zone_name + '/dynHost/record/' + record_id,
-        ip = current_ip,            # Ip address of the DynHost record (type: ip)
+        ip = current_ip,            # IP address of the DynHost record (type: ip)
         subDomain = sub_domain,     # Subdomain of the DynHost record (type: string)
     )
     print("The OVH DynHost record was successfully updated")

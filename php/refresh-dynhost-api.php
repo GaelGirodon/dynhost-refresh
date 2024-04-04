@@ -40,7 +40,7 @@ if ($cache_ip != $ip) {
     // Public IP has changed: the DynHost record must be updated
     echo "Public IP has changed, DynHost record will be updated\n";
 
-    // Instanciate an OVH Client
+    // Initialize an OVH Client
     $ovh = new Api(
         $_ENV["APPLICATION_KEY"],     // Application Key
         $_ENV["APPLICATION_SECRET"],  // Application Secret
@@ -60,7 +60,7 @@ if ($cache_ip != $ip) {
         echo "Cache updated\n";
     } catch (Exception $e) {
         echo "Failed to update the DynHost record\n";
-        echo "=> " . $e->getMessage();
+        echo "=> " . $e->getMessage() . "\n";
     }
 } else {
     echo "Public IP has not changed, DynHost record is already up-to-date\n";

@@ -1,4 +1,10 @@
-# DynHOST setup - Python
+# DynHost scripts - Python
+
+Simple Python scripts to:
+
+- Request DynHost credentials
+- Update a DynHost record (using the Python library for OVH API)
+  with the current public IP address if required.
 
 ## Install Python 3 and pip
 
@@ -6,9 +12,10 @@
 sudo apt-get install python3 python3-pip
 ```
 
-## Install Python library for OVH API
+## Install Python libraries
 
 ```shell
+pip3 install requests
 pip3 install ovh
 ```
 

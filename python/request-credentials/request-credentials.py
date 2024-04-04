@@ -14,7 +14,7 @@ config.read("../dynhost.conf")
 zone_name = config['dynhost']['zone_name']
 record_id = config['dynhost']['record_id']
 
-# Instanciate an OVH Client
+# Initialize an OVH Client
 client = ovh.Client()
 
 # Request a consumer key (API access)

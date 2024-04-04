@@ -1,24 +1,26 @@
 # DynHost refresh scripts
 
-Multiples scripts, using different programming languages,
-to refresh a DynHost entry.
+Multiple scripts, written with different programming languages,
+to automatically update a DynHost record.
 
-Each script checks your current public IP address and
-if it has changed, the DynHost entry is updated.
+Each script checks the current public IP address and, if it has changed,
+updates the DynHost record.
 
 ## About OVH DynHost
 
-DynHost allows you to point your domain or sub-domain to an IP of connection
-and, if it changes, to update it in real time.
+DynHost allows to create a DNS record (domain or subdomain) that can be
+dynamically updated to keep it in sync with its target IP address.
+Dynamically updating a DNS record helps avoid interruptions of a web
+service on IP change (when the server doesn't use a static IP address).
 
 ## Scripts
 
-- [**Bash**](bash/) - A simple Bash script without dependencies to update
-  a DynHost entry
-- [**Python**](python/) - Python 3 scripts to request credentials and update
-  a DynHost entry using the Python library for OVH API
-- [**PHP**](php/) - PHP scripts to update a DynHost entry using Composer,
+- [**Bash**](./bash) - A Bash script without dependencies to update
+  a DynHost record
+- [**PHP**](./php) - PHP scripts to update a DynHost record using Composer,
   Guzzle, PHP dotenv and PHP library for OVH API
+- [**Python**](./python) - Python 3 scripts to request credentials and update
+  a DynHost record using the Python library for OVH API
 
 ## License
 

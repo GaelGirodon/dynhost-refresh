@@ -62,7 +62,7 @@ if ($cache_ip != $ip) {
         echo "Cache updated\n";
     } catch (Exception $e) {
         echo "Failed to update the DynHost record\n";
-        echo $e->getMessage() . "\n";
+        echo "=> " . $e->getMessage() . "\n";
     }
 } else {
     echo "Public IP has not changed, DynHost record is already up-to-date\n";

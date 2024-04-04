@@ -1,9 +1,7 @@
 # DynHost refresh script - PHP
 
-A simple script to refresh a DynHost entry.
-
-This script checks your current public IP address and
-if it has changed, the DynHost entry is updated.
+A simple PHP script to update a DynHost record
+with the current public IP address if required.
 
 ## Setup
 
@@ -50,7 +48,7 @@ CONSUMER_KEY="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 API_PATH="/domain/zone/XXXXXXXXXXX.XX/dynHost/record/XXXXXXXXXX"
 ```
 
-Choose to update the DynHost entry using classic **NIC update** or **OVH API**
+Choose to update the DynHost record using classic **NIC update** or **OVH API**
 by creating a symbolic link:
 
 ```bash
